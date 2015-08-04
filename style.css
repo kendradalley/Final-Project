@@ -1,0 +1,198 @@
+body {
+	padding-top:50px;
+}
+
+#masthead {
+	min-height: 250px;
+/*   background: #cbe2c1;*/
+   background: -webkit-linear-gradient(to right, #295177, #74b2d6);
+   background: -moz-linear-gradient(to right, #295177, #74b2d6);
+   background: linear-gradient(to right, #295177, #74b2d6);
+}
+
+#masthead h1 {
+	font-size: 36px;
+	line-height: 1;
+  color: #fff;
+}
+
+#masthead .well {
+	margin-top:13%;
+}
+
+.icon-bar {
+	background-color:#fff;
+}
+
+.col-md-4 {
+  padding: -5 auto;
+  margin: 5px;
+  float: left;
+  cursor: pointer;
+}
+
+.col-md-4 span {
+position: absolute;
+font-size: 22px;
+color: #fff;
+font-weight: 600;
+text-align: center;
+left: 0
+top: 80px;
+width: 100%;
+
+  
+}
+
+.col-md-4:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(81,143,180, .8);
+  transition: all .3s linear;
+}
+
+.col-md-4:hover:before { 
+  background: none; 
+}
+
+.col-md-4 span:hover:before {
+  color: transparent;
+}
+
+.hide {
+  display: none;
+}
+.click-nav {
+  margin:25px auto;
+  width:300px;
+}
+.click-nav ul {
+  position:relative;
+  font-weight:900;
+}
+.click-nav ul li {
+  position:relative;
+  list-style:none;
+  cursor:pointer;
+}
+.click-nav ul li ul {
+  position:absolute;
+  left:0;
+  right:0;}
+.click-nav ul .clicker {
+  position:relative;
+  background:#2284B5;
+  color:#FFF;}
+.click-nav ul .clicker:hover,.click-nav ul .active {
+  background:#196F9A;
+}
+.click-nav img {
+  position:absolute;
+  top:9px;
+  left:12px;
+}
+.click-nav ul li a {
+  transition:background-color 0.2s ease-in-out;
+  -webkit-transition:background-color 0.2s ease-in-out;
+  -moz-transition:background-color 0.2s ease-in-out;
+  display:block;
+  padding:8px 10px 8px 40px;
+  background:#FFF;
+  color:#333;
+  text-decoration:none;
+}
+.click-nav a:hover {
+  background:#F2F2F2;
+}
+
+/* Fallbacks */
+.click-nav .no-js ul {display:none;}
+.click-nav .no-js:hover ul {display:block;}
+
+
+/*
+  ========================================
+  Responsive Styles
+  ========================================
+*/
+
+@media screen and (min-width: 768px) {
+	#masthead h1 {
+		font-size: 42px;
+	}
+}
+
+.navbar-bright {
+  background-color:#3b3e40;
+  color:#fff;
+}
+  
+.navbar-bright a, #masthead .lead {
+  	color:#fff;
+}
+
+.navbar-bright li > a:hover {
+    background-color:#87898c;
+}
+
+.navbar-brand {
+  margin-top: -7px;
+}
+
+.affix-top,.affix{
+	position: static;
+}
+
+.login {
+  float: right;
+  background-image: linear-gradient(to bottom,#518fb4,#295177);
+  display: block;
+  line-height: 34px;
+  padding: 0 30px 0 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+
+
+}
+
+@media (min-width: 979px) {
+
+  .login {
+
+  }
+
+  .navbar-bright {
+  height: auto;
+}
+  #sidebar.affix-top {
+    position: static;
+  	margin-top:30px;
+  	width:228px;
+  }
+  
+  #sidebar.affix {
+    position: fixed;
+    top:70px;
+    width:228px;
+  }
+}
+
+#sidebar li.active {
+  	border:0 #eee solid;
+  	border-right-width:4px;
+}
+
+#mainCol h2 {
+	padding-top: 55px;
+    margin-top: -55px;
+}
+}
+
+
